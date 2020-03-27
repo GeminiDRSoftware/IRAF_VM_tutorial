@@ -11,8 +11,14 @@ MacOS 10.15 or later.
 
 These instructions are for use with Virtual Box. You may prefer to import the
 provided OVA file into some other virtualization software, in which case you
-will have to determine how to adapt the installation and start up steps
-accordingly.
+will have to determine how to adapt the following installation and start up
+steps accordingly.
+
+An alternative to using Gemini's VM image as described here is to set up your
+own 32-bit virtual machine and install the `Astroconda packages for Python 2
+<http://www.gemini.edu/node/11823>`_ on it. This is reportedly easy to do using
+`Parallels <https://www.parallels.com>`_, for a fee.
+
 
 .. toctree::
    :maxdepth: 2
