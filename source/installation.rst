@@ -26,6 +26,11 @@ Installation & setup
 * Start Virtual Box, eg. by going to ``Launchpad`` in the tray at the bottom of
   the screen, typing *virt* in the search box and pressing the VirtualBox icon).
 
+  .. figure:: file_menu.png
+     :align: center
+
+     The main VirtualBox Manager window and File menu.
+
 * Go to ``File`` in the menu bar at the top of the screen, then ``Import
   appliance``. Press the icon to the right of the ``File`` box, go to
   ``Downloads`` (or wherever you put the OVA file) and select
