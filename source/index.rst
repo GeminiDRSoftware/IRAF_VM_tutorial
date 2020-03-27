@@ -3,18 +3,23 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to IRAF_VM_tutorial's documentation!
-============================================
+Gemini IRAF VM tutorial
+=======================
+
+Instructions for running Astroconda IRAF under a 32-bit virtual machine on
+MacOS 10.15 or later.
+
+These instructions are for use with Virtual Box. You may prefer to import the
+provided OVA file into some other virtualization software, in which case you
+will have to determine how to adapt the installation and start up steps
+accordingly.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   installation
+   login
+   usage
+   shutdown
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
