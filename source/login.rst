@@ -8,12 +8,12 @@ Starting the VM & logging in
   need to press anything when the boot menu briefly appears. When the machine
   has finished booting, you should see a login prompt.
 
-.. Initial banner message? No longer appearing.
+  .. Initial banner message? No longer appearing.
 
-.. warning::
+  .. warning::
 
-    If your mouse pointer stops working, press the left *command* key to
-    toggle off mouse/keyboard capture by the VM window.
+      If your mouse pointer stops working, press the left *command* key to
+      toggle off mouse/keyboard capture by the VM window.
 
 * Minimize the console window, which is only used for controlling the VM and
   not for processing data. The VM has no graphical desktop enviroment and
