@@ -36,10 +36,11 @@ Starting the VM & logging in
 
     .. note::
 
-       Use -Y, rather than -X, to help avoid time-outs that cause graphics
-       display to stop working.
+       Use ``-Y``, rather than ``-X``, to help avoid time-outs that cause
+       graphics display to stop working.
 
-       There is already an ~/iraf directory with a default login.cl & uparm.
+       There is already an ``~/iraf`` directory with a default ``login.cl`` &
+       ``uparm/``.
 
        The necessary conda environment is activated automatically on login.
 
