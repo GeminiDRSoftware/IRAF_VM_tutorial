@@ -6,49 +6,58 @@ Installation & setup
 
 .. TODO
 
-* Download the OVA file with the IRAF VM image from ?? communityCO7.ova.
-  A progress bar will be shown under the ``Downloads`` icon in the tray at the
-  bottom of the screen.
+* Get the installation files
 
-* To ensure the integrity of the download, you can open a terminal
-  window (as described in :ref:`login`), type ``shasum
-  Downloads/communityCO7.ova`` (substituting whatever path you downloaded it to)
-  and verify that the resulting checksum is
-  ``757ccdbad35f343e9b570c3fa642b00fa0ddde4e``; if not, you should try
-  downloading the file again.
+  - Download the OVA file with the IRAF VM image from ?? communityCO7.ova.
+    A progress bar will be shown under the ``Downloads`` icon in the tray at the
+    bottom of the screen.
 
-* Download the DMG file for the free version of Virtual Box from
-  https://www.virtualbox.org/wiki/Downloads, under ``OS X hosts``.
+  - To ensure the integrity of the download, you can open a terminal
+    window (as described in :ref:`login`), type ``shasum
+    Downloads/communityCO7.ova`` (substituting whatever path you downloaded it
+    to) and verify that the resulting checksum is
+    ``757ccdbad35f343e9b570c3fa642b00fa0ddde4e``; if not, you should try
+    downloading again.
 
-* Once the downloads are complete, click on the ``Downloads`` icon and select
-  the VirtualBox DMG file to start the installer. Follow the instructions,
-  entering your personal password when prompted to do so. Your administrator
-  may have to perform this step, if you do not have software installation
-  privileges.
+  - Download the DMG file for the free version of Virtual Box from
+    https://www.virtualbox.org/wiki/Downloads, under ``OS X hosts``. A
+    checksum is also available on that page, which you can verify using
+    ``shasum -a 256 filename.dmg``.
 
-* Ensure that you have more than 16GB of available disk space for the VM image
-  in your home directory (if necessary, you may reclaim 6GB afterwards by
-  deleting the OVA file).
+* Install Virtual Box
 
-* Start Virtual Box, eg. by going to ``Launchpad`` in the tray at the bottom of
-  the screen, typing *virt* in the search box and pressing the VirtualBox icon).
+  - Once the downloads are complete, click on the ``Downloads`` icon and select
+    the VirtualBox DMG file to start the installer. Follow the instructions,
+    entering your personal password when prompted to do so. Your administrator
+    may have to perform this step, if you do not have software installation
+    privileges.
 
-  .. figure:: file_menu.png
-     :align: center
+* Import the VM image
 
-     The main VirtualBox Manager window and File menu.
+  - Ensure that you have more than 16GB of available disk space for the VM
+    image in your home directory (if necessary, you may reclaim 6GB afterwards
+    by deleting the OVA file).
 
-* Go to ``File`` in the menu bar at the top of the screen, then ``Import
-  appliance``. Press the icon to the right of the ``File`` box, go to
-  ``Downloads`` (or wherever you put the OVA file) and select
-  ``communityCO7.ova``. Press ``Continue`` in the main window.
+  - Start Virtual Box, eg. by going to ``Launchpad`` in the tray at the bottom
+    of the screen, typing *virt* in the search box and pressing the VirtualBox
+    icon).
 
-  Alternatively, double clicking on ``communityCO7.ova`` may open it in Virtual
-  Box automatically, depending on your settings.
+    .. figure:: file_menu.png
+       :align: center
 
-  - Accept the default settings.
+       The main VirtualBox Manager window and File menu.
 
-  - Press ``Import`` and wait for the process to complete.
+  - Go to ``File`` in the menu bar at the top of the screen, then ``Import
+    appliance``. Press the icon to the right of the ``File`` box, go to
+    ``Downloads`` (or wherever you put the OVA file) and select
+    ``communityCO7.ova``. Press ``Continue`` in the main window.
+
+    Alternatively, double clicking on ``communityCO7.ova`` may open it in
+    Virtual Box automatically, depending on your settings.
+
+    - Accept the default settings.
+
+    - Press ``Import`` and wait for the process to complete.
 
 * Configure networking
 
