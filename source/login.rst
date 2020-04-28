@@ -3,10 +3,10 @@
 Starting the VM & logging in
 ****************************
 
-* Press the ``Start`` arrow in the ``Oracle VM VirtualBox Manager`` window to
-  turn on the VM. Wait for it to boot. A console window will open. You don't
-  need to press anything when the boot menu briefly appears. When the machine
-  has finished booting, you should see a login prompt.
+* Press the ``Start`` arrow at the top of the ``Oracle VM VirtualBox Manager``
+  window to turn on the VM. Wait for it to boot. A console window will
+  open. You don't need to press anything when the boot menu briefly
+  appears. When the machine has finished booting, you should see a login prompt.
 
   .. Initial banner message? No longer appearing.
 

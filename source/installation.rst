@@ -10,6 +10,13 @@ Installation & setup
   A progress bar will be shown under the ``Downloads`` icon in the tray at the
   bottom of the screen.
 
+* To ensure the integrity of the download, you can open a terminal
+  window (as described in :ref:`login`), type ``shasum
+  Downloads/communityCO7.ova`` (substituting whatever path you put it under)
+  and verify that the resulting checksum is
+  ``757ccdbad35f343e9b570c3fa642b00fa0ddde4e``; if not, you should try
+  downloading the file again.
+
 * Download the DMG file for the free version of Virtual Box from
   https://www.virtualbox.org/wiki/Downloads, under ``OS X hosts``.
 
@@ -39,9 +46,7 @@ Installation & setup
   Alternatively, double clicking on ``communityCO7.ova`` may open it in Virtual
   Box automatically, depending on your settings.
 
-  .. TODO
-
-  - Accept the default settings? Check with Petri.
+  - Accept the default settings.
 
   - Press ``Import`` and wait for the process to complete.
 
@@ -58,13 +63,6 @@ Installation & setup
 
 * Make sure ``communityCO7`` is selected on the left-hand side of the ``Oracle
   VM VirtualBox Manager`` window.
-
-* Adapt the VM configuration to avoid a bug causing 100% CPU utilization
-  (this bullet should go away after IT makes these changes permanent).
-
-  - Disable audio.
-
-  - Enable 3D acceleration.
 
 * Configure a shared data directory.
 
