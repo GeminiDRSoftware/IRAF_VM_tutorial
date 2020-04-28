@@ -12,7 +12,7 @@ Installation & setup
 
 * To ensure the integrity of the download, you can open a terminal
   window (as described in :ref:`login`), type ``shasum
-  Downloads/communityCO7.ova`` (substituting whatever path you put it under)
+  Downloads/communityCO7.ova`` (substituting whatever path you downloaded it to)
   and verify that the resulting checksum is
   ``757ccdbad35f343e9b570c3fa642b00fa0ddde4e``; if not, you should try
   downloading the file again.
