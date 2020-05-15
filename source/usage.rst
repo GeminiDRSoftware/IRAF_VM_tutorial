@@ -17,14 +17,17 @@ Using the VM
 
   .. warning::
 
-     When working in the ``/data`` directory shared with the host machine, a
-     problem has been observed where certain IRAF tasks (including
-     ``gdisplay``) appear to run normally but only process one image extension
-     per file, or one of several files, producing incomplete output. You should
-     therefore **work in** a directory under ``/home/irafuser`` (so that
-     temporary files get written there), but you can still keep input & output
-     files on ``/data`` and point the ``rawpath`` parameter of the appropriate
-     IRAF tasks there, in order to find them.
+     Don't work in ``vm_transfer``; use it for transferring input/output files.
+
+     When working in the directory shared with the host machine
+     (eg. ``vm_transfer``), a problem has been observed where certain IRAF
+     tasks (including ``gdisplay``) appear to run normally but only process one
+     image extension per file, or one of several files, producing incomplete
+     output. You should therefore **work in** another directory under
+     ``/home/irafuser`` (so that temporary files get written there), but you
+     can still keep input & output files in ``vm_transfer`` and point the
+     ``rawpath`` parameter of the appropriate IRAF tasks there, in order to
+     find them.
 
 * You can also use DRAGONS (and other conda packages), but it is recommended
   that you instead do that directly on the host machine where possible, as you

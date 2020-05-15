@@ -12,6 +12,17 @@ Shutting down the VM
   .. |close_button| image:: close_button.png
      :scale: 75
 
-* While the VM is running in the background, it will probably use a few percent
-  of a CPU core, which may drain your laptop battery faster than usual.
+
+Other important notes
+*********************
+
+* While the VM is running idle in the background, it will probably use a
+  few percent of a CPU core, which may drain your laptop battery faster
+  than usual.
+
+* If you delete the VM, you will likely lose all the files that were on it
+  (except those in the shared directory).
+
+* Make sure you have read the warning about not working directly in the
+  ``vm_transfer`` directory under :ref:`usage`.
 
