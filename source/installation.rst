@@ -4,14 +4,20 @@
 Installation & setup
 ********************
 
-.. TODO
+.. |ova_file| raw:: html
+
+   <a href="https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing" target="_blank">Google Drive</a>
+
+.. |vbox_downloads| raw:: html
+
+   <a href="https://www.virtualbox.org/wiki/Downloads" target="_blank">https://www.virtualbox.org/wiki/Downloads</a>
+
 
 * Get the installation files
 
   - Download the OVA file containing the IRAF VM image
-    (``gemini-IRAF-CO7.ova``) from `Google Drive
-    <https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing>`_.
-    This is 6GB in size, so will take a while to transfer.
+    (``gemini-IRAF-CO7.ova``) from |ova_file|. This is 6GB in size, so will
+    take a while to transfer.
 
   - To ensure the integrity of the download, you can open a terminal
     window (see :ref:`login`), type ``shasum Downloads/gemini-IRAF-CO7.ova``
@@ -20,9 +26,8 @@ Installation & setup
     you should try downloading again.
 
   - Download the DMG file for the free version of Virtual Box from
-    https://www.virtualbox.org/wiki/Downloads, under ``OS X hosts``. A
-    checksum is also available on that page, which you can verify using
-    ``shasum -a 256 filename.dmg``.
+    |vbox_downloads|, under ``OS X hosts``. A checksum is also available on
+    that page, which you can verify using ``shasum -a 256 filename.dmg``.
 
 * Install Virtual Box
 
@@ -86,5 +91,5 @@ Installation & setup
     option (and ``Make Permanent``, if you have it). Press ``OK`` and then
     ``OK`` again in the parent window.
 
-    .. Where did the "Make Permanent" option go?  TO DO
+    .. Where did the "Make Permanent" option go?
 
