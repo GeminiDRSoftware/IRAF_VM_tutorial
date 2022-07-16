@@ -3,11 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Gemini IRAF VM tutorial
-=======================
+Old VirtualBox instructions
+===========================
 
-Instructions for running Astroconda IRAF under a 32-bit virtual machine on
-MacOS 10.15 or later.
+These are the "old" instructions from 2020, for Apple machines with an Intel
+CPU; they do not work on machines with an M1/M2 (ARM) processor, but you might
+find it convenient to continue using this method on older Apple machines.
 
 These instructions are for use with Virtual Box. You may prefer to import the
 provided OVA file into some other virtualization software, in which case you

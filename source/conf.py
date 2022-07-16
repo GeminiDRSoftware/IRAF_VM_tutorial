@@ -20,7 +20,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'IRAF_VM_tutorial'
-copyright = '2020, AURA, Inc.'
+copyright = '2020,2022 AURA, Inc.'
 author = 'AURA, Inc.'
 
 
