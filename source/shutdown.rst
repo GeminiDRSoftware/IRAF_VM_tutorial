@@ -3,16 +3,14 @@
 Shutting down the VM
 ********************
 
-Other important notes
-*********************
+* You can shut down the VM by pressing control-c at any time in the terminal
+  where ``gemvm`` is running. This does a clean ACPI shutdown (similar to
+  pressing the soft power button), but it's best to stop any programs that are
+  running first, especially data reduction scripts. If the OS is still booting
+  when you press ctrl-c, you will have to wait for that to complete before the
+  shutdown starts, after which it should only take a few (~5) seconds.
 
-* While the VM is running idle in the background, it will probably use a few
-  percent of a CPU core, which may drain your laptop battery slightly faster
-  than usual.
-
-* If you delete or overwrite the qcow2 file, you will lose all the files that
-  were on the VM (except those under the vm_transfer mount). To reduce the risk
-  of this happening, it is recommended that you keep that disk image in a safe
-  location, refer to it using a name assigned in your configuration file (not
-  by its path) and run gemvm in a different directory (such as ~).
+* Occasionally, if something goes wrong with the boot or shut-down sequence,
+  GemVM might time out and return you to the command prompt, with QEMU still
+  running as a background process. See :ref:`gemvm_timeouts`.
 

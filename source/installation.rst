@@ -3,3 +3,91 @@
 Installation & setup
 ********************
 
+.. |disk_image| raw:: html
+
+   <a href="https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing" target="_blank">Google Drive</a>
+
+.. |anaconda_downloads| raw:: html
+
+   <a href="https://www.anaconda.com/products/distribution" target="_blank">anaconda.com</a>
+
+.. |anaconda_terms| raw:: html
+
+   <a href="https://www.anaconda.com/terms-of-service" target="_blank">terms of service</a>
+
+.. |dragons_install| raw:: html
+
+   <a href="http://www.gemini.edu/observing/phase-iii/understanding-and-processing-data/data-processing-software/download-latest" target="_blank">DRAGONS installation</a>
+
+
+Get the installation files
+==========================
+
+* Download the IRAF VM disk image file (``gemini-IRAF-CO7-2022.07.tar.gz``)
+  from |disk_image|. This is 5GB in size, so will take a while to transfer.
+
+  - To ensure the integrity of the download, you can open a terminal
+    window, type ``shasum Downloads/gemini-IRAF-CO7-2022.07.tar.gz``
+    (substituting whatever path you downloaded it to) and verify that the
+    resulting checksum is ``TBC----------------------------------TBC``; if
+    not, you should try downloading again.
+
+* If you don't already have Anaconda installed on your host machine,
+  download it from |anaconda_downloads| (noting the non-commercial
+  |anaconda_terms| for their repository). You may use Miniconda if you prefer.
+
+  .. warning::
+
+     You should normally download Anaconda's "64-Bit Command Line Installer"
+     for Intel, **even on Apple M1/M2 (ARM64) machines**, *not* the "64-Bit
+     (M1)" installer.
+
+     Anaconda's new M1 installer *can* be used, but there is no DRAGONS build
+     for it yet (as of mid 2022), which is needed for reducing Gemini imaging
+     (and eventually spectroscopic) data in Python. In the meantime, a small
+     M1-native enviroment can be created within the Intel/MacOS version of
+     Anaconda, allowing the IRAF VM to coexist easily with DRAGONS.
+
+
+Set up Anaconda on your host machine
+====================================
+
+If you haven't already done so, you should install Anaconda as for
+|dragons_install| (or following Anaconda's instructions). Make sure that the
+necessary conda channels are defined, as in the section "Set up Anaconda
+Channels" of that page. It is not obligatory to install DRAGONS itself. Don't
+install Gemini IRAF, since that's provided by the VM (on MacOS 10.15+).
+
+
+Install GemVM
+=============
+
+With the Anaconda base environment activated (type ``conda activate``) and
+Gemini's public conda channel defined (see the DRAGONS link above), issue the
+following command to install GemVM and its dependencies:
+
+  .. code-block:: none
+
+     CONDA_SUBDIR=osx-arm64 conda create -n gemvm gemvm
+
+
+.. _gemvm_setup:
+
+Set up the VM
+=============
+
+* Place the VM disk image that you downloaded earlier in a safe, permanent
+  location (if anything happens to this file, you will lose the entire contents
+  of the VM). You will need to decompress the file with
+  ``tar zxf gemini-IRAF-CO7-2022.07.tar.gz`` before you can use it. The
+  resulting QCOW2 image will occupy 13GB of disk space initially and will grow
+  to a maximum of 50GB as you create data files on the VM.
+
+* NOT IMPLEMENTED YET: Run ``gemvm-config`` to assign a name/label (and any
+  other parameters you want to tweak) to the newly-downloaded VM image.
+  Referring to the VM image by an assigned name is both more convenient and
+  safer than typing its path every time, since you can work in another
+  directory, with less risk of inadvertently deleting the image.
+
+  .. Call it IRAF ?
+

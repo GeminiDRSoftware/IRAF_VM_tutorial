@@ -6,8 +6,8 @@
 Gemini IRAF VM tutorial
 =======================
 
-Instructions for running Astroconda (32-bit) IRAF under an Intel Linux virtual
-machine on MacOS 10.15 or later.
+Instructions for running Astroconda (32-bit) IRAF on MacOS 10.15 or later,
+under an x86 Linux virtual machine.
 
 A link to the previous instructions for VirtualBox can be found below, but they
 do **not** work on newer M1/M2 (ARM) Apple machines, nor can VMWare or
@@ -17,20 +17,19 @@ Parallels run Gemini IRAF on those machines.
    hardware; nevertheless, an updated OVA file has been made available for
    anyone that wishes to continue using VirtualBox on Intel for the time being.
 
-This method uses `QEMU <https://www.qemu.org>`_ to emulate Intel hardware on
+This method uses `QEMU <https://www.qemu.org>`_ to emulate x86_64 hardware on
 ARM64, which works well, producing the same results as on a Linux machine, but
 with a large performance penalty. A test case using GMOS multi-slit data took
-**14 times** as long to run on an M1 machine as when running Linux natively on
-a recent i7 processor, with the overhead varying considerably between different
+**14 times** as long to run on an M1 machine as when running natively on a
+recent i7 processor, with the overhead varying considerably between different
 processing steps. This is, however, the *only* way of running the necessary
-IRAF packages on new Apple CPUs (at least prior to *possible* optimizations in
-MacOS 13).
+IRAF packages on new Apple CPUs (at least prior to MacOS 13).
 
 .. On Apple machines with Intel processors, the virtualization overhead is much
    smaller and the processing speed should be similar to that on VirtualBox.
 
-Compared with the original version 1 release for VirtualBox, the new Gemini
-IRAF VM image has the following features:
+Compared with the original 2020 release for VirtualBox, the new Gemini IRAF VM
+image has the following features:
 
   * A new control interface, GemVM.
   * A simpler installation method, using Anaconda / Miniconda.
@@ -48,9 +47,12 @@ IRAF VM image has the following features:
 
    installation
    login
+   sharing_data
    usage
    shutdown
+   other
+   troubleshooting
    virtualbox/index
 
-.. [#f1] (You should run DRAGONS directly on your host machine instead, unless
-         you really need to use it in conjunction with IRAF.)
+.. [#f1] You should run DRAGONS directly on your host machine instead, unless
+         you really need to use it in conjunction with IRAF.
