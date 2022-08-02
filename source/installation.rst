@@ -77,17 +77,23 @@ Set up the VM
 =============
 
 * Place the VM disk image that you downloaded earlier in a safe, permanent
-  location (if anything happens to this file, you will lose the entire contents
-  of the VM). You will need to decompress the file with
+  location (such as ``~/GemVM/``). If anything happens to this file, you will
+  lose the entire contents of the VM.
+
+* You will need to decompress the file with
   ``tar zxf gemini-IRAF-CO7-2022.07.tar.gz`` before you can use it. The
   resulting QCOW2 image will occupy 13GB of disk space initially and will grow
   to a maximum of 50GB as you create data files on the VM.
 
-* NOT IMPLEMENTED YET: Run ``gemvm-config`` to assign a name/label (and any
-  other parameters you want to tweak) to the newly-downloaded VM image.
-  Referring to the VM image by an assigned name is both more convenient and
-  safer than typing its path every time, since you can work in another
-  directory, with less risk of inadvertently deleting the image.
+* Run ``gemvm-config`` to assign a name/label (and any other parameters you
+  want to tweak) to the downloaded VM image, eg.:
 
-  .. Call it IRAF ?
+  .. code-block:: none
+
+     gemvm-config add IRAF-2022.07 ~/GemVM/gemini-IRAF-CO7-2022.07.qcow2
+
+  where ``IRAF-2022.07`` is the name you wish to use. Referring to the VM image
+  by an assigned name is both more convenient and safer than typing its path
+  every time, since it's easy to work in another directory, with less risk of
+  inadvertently deleting the image.
 
