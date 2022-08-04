@@ -66,9 +66,15 @@ With the Anaconda base environment activated (type ``conda activate``) and
 Gemini's public conda channel defined (see the DRAGONS link above), issue the
 following command to install GemVM and its dependencies:
 
+Apple M1/M2 (ARM64) host machines:
   .. code-block:: none
 
      CONDA_SUBDIR=osx-arm64 conda create -n gemvm gemvm
+
+Intel host machines:
+  .. code-block:: none
+
+     conda create -n gemvm gemvm
 
 
 .. _gemvm_setup:
@@ -93,7 +99,7 @@ Set up the VM
      gemvm-config add IRAF-2022.07 ~/GemVM/gemini-IRAF-CO7-2022.07.qcow2
 
   where ``IRAF-2022.07`` is the name you wish to use. Referring to the VM image
-  by an assigned name is both more convenient and safer than typing its path
-  every time, since it's easy to work in another directory, with less risk of
-  inadvertently deleting the image.
+  by an assigned name is both more convenient and safer than typing the file
+  path every time, since it's easy to work in another directory, with less risk
+  of inadvertently deleting the image.
 

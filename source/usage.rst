@@ -32,6 +32,6 @@ Using the VM
   user-maintainable.
 
 * It should be possible to leave the VM running while your laptop is suspended
-  and resume processing later. There is currently no way to suspend the VM
-  itself.
+  and resume processing later -- but you may find that the clock time is wrong
+  on the VM afterwards. There is currently no way to suspend the VM itself.
 

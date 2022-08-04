@@ -19,5 +19,5 @@ Other things to know
   distributed in a tar file with restricted read permissions by default. Do not
   let anyone obtain a copy of your disk image if you have installed an ssh key
   that allows you to mount directories from your host machine without a
-  password! They will be able to log into your account.
+  password! They will be able to log into your host account.
 
