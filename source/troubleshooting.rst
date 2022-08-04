@@ -41,9 +41,10 @@ immediately, the most likely reasons are:
 * You have installed the Intel version of the GemVM stack on an M1/M2 machine.
   This is an unstable and extremely slow combination, which won't start at all
   with the QEMU options passed by GemVM. The log file will say
-  ``Error: HV_ERROR`` near the top. Please ``conda remove`` the problematic
-  environment and see :ref:`gemvm_install_cmd` for the correct installation
-  command.
+  ``Error: HV_ERROR`` near the top. Please remove the problematic environment
+  using ``conda remove -n <bad_env_name> --all`` (after doing
+  ``conda deactivate``) and see :ref:`gemvm_install_cmd` for the correct
+  installation command.
 
 
 .. _gemvm_timeouts:
