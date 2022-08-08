@@ -5,7 +5,7 @@ Installation & setup
 
 .. |disk_image| raw:: html
 
-   <a href="https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing" target="_blank">Google Drive</a>
+   <a href="https://drive.google.com/file/d/1ONa9R4SLF7Yb8ubPRAsVKukLzhth03i3/view?usp=sharing" target="_blank">Google Drive</a>
 
 .. |anaconda_downloads| raw:: html
 
@@ -29,7 +29,7 @@ Get the installation files
   - To ensure the integrity of the download, you can open a terminal
     window, type ``shasum Downloads/gemini-IRAF-CO7-2022.07.tar.gz``
     (substituting whatever path you downloaded it to) and verify that the
-    resulting checksum is ``TBC----------------------------------TBC``; if
+    resulting checksum is ``bad2bf9e46556b7ada7c62a1972b3a96807854a8``; if
     not, you should try downloading again.
 
 * If you don't already have Anaconda installed on your host machine,
