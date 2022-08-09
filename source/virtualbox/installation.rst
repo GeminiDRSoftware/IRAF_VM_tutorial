@@ -10,7 +10,7 @@ Installation & setup
 
 .. |ova_file_2022| raw:: html
 
-   <a href="https://drive.google.com/file/d/1gJGB_l7UWH_4rkKjskn_JsMdP0-Mmy99/view?usp=sharing" target="_blank">Google Drive</a>
+   <a href="https://drive.google.com/" target="_blank">Google Drive</a>
 
 .. |vbox_downloads| raw:: html
 
@@ -18,6 +18,9 @@ Installation & setup
 
 
 * Get the installation files
+
+    **LINK REMOVED; THE 2022 VM IMAGE ISN'T WORKING YET ON VIRTUALBOX** (but
+    the 2020 version is still linked from the sub-bullet below).
 
   - Download the OVA file containing the IRAF VM image
     (``gemini-IRAF-CO7-2022.07.ova``, updated Aug 2022) from |ova_file_2022|.
@@ -30,7 +33,7 @@ Installation & setup
     window (see :ref:`login`), type
     ``shasum Downloads/gemini-IRAF-CO7-2022.07.ova`` (substituting whatever
     path you downloaded it to) and verify that the resulting checksum is
-    ``0314065e69c399fbe71b2dd875cec3745dbc44d2``; if not, you should try
+    ``TBC----------------------------------TBC``; if not, you should try
     downloading again.
 
   - Download the DMG file for the free version of Virtual Box from

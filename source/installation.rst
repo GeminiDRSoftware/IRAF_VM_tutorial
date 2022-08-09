@@ -5,7 +5,7 @@ Installation & setup
 
 .. |disk_image| raw:: html
 
-   <a href="https://drive.google.com/file/d/1ONa9R4SLF7Yb8ubPRAsVKukLzhth03i3/view?usp=sharing" target="_blank">Google Drive</a>
+   <a href="https://drive.google.com/file/d/17rswmFMIJF7toWUt2ezcdwA3h3D5va6r/view?usp=sharing" target="_blank">Google Drive</a>
 
 .. |anaconda_downloads| raw:: html
 
@@ -23,14 +23,19 @@ Installation & setup
 Get the installation files
 ==========================
 
-* Download the IRAF VM disk image file (``gemini-IRAF-CO7-2022.07.tar.gz``)
+* Download the IRAF VM disk image file (``gemini-IRAF-CO7-2022.07.zip``)
   from |disk_image|. This is 5GB in size, so will take a while to transfer.
 
-  - To ensure the integrity of the download, you can open a terminal
-    window, type ``shasum Downloads/gemini-IRAF-CO7-2022.07.tar.gz``
-    (substituting whatever path you downloaded it to) and verify that the
-    resulting checksum is ``bad2bf9e46556b7ada7c62a1972b3a96807854a8``; if
-    not, you should try downloading again.
+  - If you're using Apple's Safari Web browser, it will probably unzip the file
+    for you automatically. Otherwise, you can open a terminal window, go to the
+    directory where the file was downloaded (usually ``cd Downloads``) and type
+    ``unzip gemini-IRAF-CO7-2022.07.zip`` (or use another archive manager) to
+    extract it.
+
+  - To ensure the integrity of the download, type
+    ``shasum gemini-IRAF-CO7-2022.07.qcow2`` and verify that the resulting
+    checksum is ``932d9db4224429cb326bfe969253ec9e75253dcc``; if not, you
+    should try downloading again.
 
 * If you don't already have Anaconda installed on your host machine,
   download it from |anaconda_downloads| (noting the non-commercial
@@ -85,12 +90,8 @@ Set up the VM
 
 * Place the VM disk image that you downloaded earlier in a safe, permanent
   location (such as ``~/GemVM/``). If anything happens to this file, you will
-  lose the entire contents of the VM.
-
-* You will need to decompress the file with
-  ``tar zxf gemini-IRAF-CO7-2022.07.tar.gz`` before you can use it. The
-  resulting QCOW2 image will occupy 13GB of disk space initially and will grow
-  to a maximum of 50GB as you create data files on the VM.
+  lose the entire contents of the VM. The file will initially occupy 14GB of
+  disk space, growing to a maximum of 50GB as you create data files on the VM.
 
 * Run ``gemvm-config`` to assign a name/label (and any other parameters you
   want to tweak) to the downloaded VM image, eg.:

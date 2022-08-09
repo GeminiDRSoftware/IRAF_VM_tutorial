@@ -16,8 +16,8 @@ Other things to know
 * If your disk image (qcow2 file) is readable by other users on the same host
   machine or network filesystem, they will be able to boot a copy and see all
   of the files you have placed on the VM. For that reason, the image is
-  distributed in a tar file with restricted read permissions by default. Do not
-  let anyone obtain a copy of your disk image if you have installed an ssh key
-  that allows you to mount directories from your host machine without a
-  password! They will be able to log into your host account.
+  distributed in an archive file with restricted read permissions by default.
+  Do not let anyone obtain a copy of your disk image if you have installed an
+  ssh key that allows you to mount directories from your host machine without
+  a password! They will be able to log into your host account.
 
