@@ -98,6 +98,7 @@ Set up the VM
 
   .. code-block:: none
 
+     conda activate gemvm
      gemvm-config add IRAF-2022.07 ~/GemVM/gemini-IRAF-CO7-2022.07.qcow2
 
   where ``IRAF-2022.07`` is the name you wish to use. Referring to the VM image
