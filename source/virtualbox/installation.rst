@@ -4,13 +4,9 @@
 Installation & setup
 ********************
 
-.. |ova_file_2020| raw:: html
+.. |ova_file| raw:: html
 
-   <a href="https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing" target="_blank">here</a>
-
-.. |ova_file_2022| raw:: html
-
-   <a href="https://drive.google.com/" target="_blank">Google Drive</a>
+   <a href="https://drive.google.com/file/d/1vRAPmdPdH25Sn4gkjZ7AmTHIL6FM0NeG/view?usp=sharing" target="_blank">Google Drive</a>
 
 .. |vbox_downloads| raw:: html
 
@@ -19,22 +15,15 @@ Installation & setup
 
 * Get the installation files
 
-    **LINK REMOVED; THE 2022 VM IMAGE ISN'T WORKING YET ON VIRTUALBOX** (but
-    the 2020 version is still linked from the sub-bullet below).
-
   - Download the OVA file containing the IRAF VM image
-    (``gemini-IRAF-CO7-2022.07.ova``, updated Aug 2022) from |ova_file_2022|.
-    This is 5GB in size, so will take a while to transfer.
-
-    - The original OVA file from 2020 can still be found |ova_file_2020|, with
-      checksum ``1881ae0afa3e9699ccec861b508a630787cf566d``.
+    (``gemini-IRAF-CO7.ova``) from |ova_file|. This is 6GB in size, so will
+    take a while to transfer.
 
   - To ensure the integrity of the download, you can open a terminal
-    window (see :ref:`login`), type
-    ``shasum Downloads/gemini-IRAF-CO7-2022.07.ova`` (substituting whatever
-    path you downloaded it to) and verify that the resulting checksum is
-    ``TBC----------------------------------TBC``; if not, you should try
-    downloading again.
+    window (see :ref:`login`), type ``shasum Downloads/gemini-IRAF-CO7.ova``
+    (substituting whatever path you downloaded it to) and verify that the
+    resulting checksum is ``1881ae0afa3e9699ccec861b508a630787cf566d``; if not,
+    you should try downloading again.
 
   - Download the DMG file for the free version of Virtual Box from
     |vbox_downloads|, under ``OS X hosts``. A checksum is also available on
