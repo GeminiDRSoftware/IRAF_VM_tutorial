@@ -77,6 +77,15 @@ this case. The stray background process should not consume a lot of resources,
 but will tie up the default ssh port (see last bullet) and is best cleaned up.
 
 
+Known problems
+==============
+
+* The VM clock can lose time when a host laptop goes to sleep, even if the lid
+  is open. We don't have an immediate solution for this; for the time being,
+  you can either disable sleep mode or live with incorrect (but functionally
+  harmless) timestamps on your files. Sorry for any inconvenience.
+
+
 Helpdesk
 ========
    
