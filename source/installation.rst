@@ -60,8 +60,15 @@ Set up Anaconda on your host machine
 If you haven't already done so, you should install Anaconda as for
 |dragons_install| (or following Anaconda's instructions). Make sure that the
 necessary conda channels are defined, as in the section "Set up Anaconda
-Channels" of that page. It is not obligatory to install DRAGONS itself. Don't
-install Gemini IRAF, since that's provided by the VM (on MacOS 10.15+).
+Channels" of that page -- in summary, you should have done the following:
+
+  .. code-block:: none
+
+     conda config --add channels http://ssb.stsci.edu/astroconda
+     conda config --add channels http://astroconda.gemini.edu/public
+
+It is not obligatory to install DRAGONS itself. Don't install Gemini IRAF,
+since that's provided by the VM (on MacOS 10.15+).
 
 .. _gemvm_install_cmd:
 
