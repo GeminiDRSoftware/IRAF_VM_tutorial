@@ -64,7 +64,7 @@ Channels" of that page -- in summary, you should have done the following:
 
   .. code-block:: none
 
-     conda config --add channels http://ssb.stsci.edu/astroconda
+     conda config --add channels conda-forge
      conda config --add channels http://astroconda.gemini.edu/public
 
 It is not obligatory to install DRAGONS itself. Don't install Gemini IRAF,

@@ -18,7 +18,7 @@ Using the VM
      gemini
 
 * You may then continue processing data as usual. All the IRAF packages from
-  Astroconda are available, along with ``emacs`` & ``vi``.
+  Gemini's Astroconda channel are available, along with ``emacs`` & ``vi``.
 
 * You can also use DRAGONS (and other conda packages), but it's better to run
   those directly on the host machine wherever possible, since processing data
