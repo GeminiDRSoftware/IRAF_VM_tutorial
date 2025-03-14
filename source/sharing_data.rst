@@ -8,14 +8,13 @@ In order to share files between the VM and your host machine, you can mount a
 subdirectory from the host on ``/home/irafuser/vm_transfer``, using ``sshfs``.
 
 Before doing so, your Mac has to have the "Remote Login" option turned on.
-In order to do that, you have to go to 
-
-"System Settings" --> "General" --> "Sharing" and toggle the button next to 
-"Remote Login" to on, if it's not already.
+In order to do that, you have to go to "System Settings" --> "General" -->
+"Sharing" and toggle the button next to "Remote Login" to on, if it's not
+already.
 
 .. figure:: RemoteLoginOn.png
      :align: center
-
+|
 For example, if your username is ``gumby`` and you wish to copy files to/from
 ``/home/gumby/data``, you can log onto the VM as ``irafuser`` and issue the
 following command:
